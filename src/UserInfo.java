@@ -72,6 +72,7 @@ public class UserInfo {
   Average = userInput.nextDouble();
   
   System.out.println(" ");
+  system.out.print("Your information: ");
   System.out.println(String.format("%-10s" + userLogin, "login: ") );
   System.out.println(String.format("%-10s" + studentID, "ID: ") );
   System.out.println(String.format("%-10s" + (userLastName) + (", ") + (userName), "Name: " ) );
