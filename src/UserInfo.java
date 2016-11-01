@@ -1,4 +1,3 @@
-package userinfo;
 import java.util.Scanner;
 
 
@@ -47,8 +46,8 @@ public class UserInfo {
   Scanner userInput = new Scanner(System.in);
   String userName;
   String userLastName;
-  double userGrade;
-  double studentID;
+  int userGrade;
+  int studentID;
   String userLogin;
   double Average;
   
@@ -60,10 +59,10 @@ public class UserInfo {
   userLastName = userInput.nextLine();
   
   System.out.print("Grade: ");
-  userGrade = userInput.nextDouble();
+  userGrade = userInput.nextInt();
   
   System.out.print("Student ID: ");
-  studentID = userInput.nextDouble();
+  studentID = userInput.nextInt();
   
   System.out.print("Login: ");
   userLogin = userInput.next();
@@ -72,7 +71,7 @@ public class UserInfo {
   Average = userInput.nextDouble();
   
   System.out.println(" ");
-  system.out.print("Your information: ");
+  System.out.println("Your information: ");
   System.out.println(String.format("%-10s" + userLogin, "login: ") );
   System.out.println(String.format("%-10s" + studentID, "ID: ") );
   System.out.println(String.format("%-10s" + (userLastName) + (", ") + (userName), "Name: " ) );
